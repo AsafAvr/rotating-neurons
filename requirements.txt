@@ -1,0 +1,10 @@
+# Versions the paper results were produced with (Python 3.10).
+# `pip install -e .` installs compatible versions; use this file to pin exactly.
+torch==2.8.0
+transformers==4.55.0
+safetensors==0.4.5
+huggingface_hub>=0.23
+numpy==1.26.4
+matplotlib==3.10.0
+tqdm==4.67.1
+pytest==8.3.4

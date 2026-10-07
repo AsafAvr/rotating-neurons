@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rotate"
+version = "1.0.0"
+description = "ROTATE: disentangling MLP neuron weights into vocabulary channels (arXiv:2604.06005)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Asaf Avrahamy" },
+    { name = "Yoav Gur-Arieh" },
+    { name = "Mor Geva" },
+]
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.44",
+    "safetensors>=0.4",
+    "huggingface_hub>=0.23",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2604.06005"
+
+[tool.setuptools.packages.find]
+include = ["rotate*"]
+
+[tool.setuptools.package-data]
+rotate = ["assets/*.pt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

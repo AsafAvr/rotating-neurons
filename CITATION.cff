@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "rotating-neurons: code for Disentangling MLP Neuron Weights in Vocabulary Space"
+authors:
+  - family-names: Avrahamy
+    given-names: Asaf
+  - family-names: Gur-Arieh
+    given-names: Yoav
+  - family-names: Geva
+    given-names: Mor
+license: MIT
+preferred-citation:
+  type: article
+  title: "Disentangling MLP Neuron Weights in Vocabulary Space"
+  authors:
+    - family-names: Avrahamy
+      given-names: Asaf
+    - family-names: Gur-Arieh
+      given-names: Yoav
+    - family-names: Geva
+      given-names: Mor
+  journal: "arXiv preprint arXiv:2604.06005"
+  year: 2026
+  url: "https://arxiv.org/abs/2604.06005"
